@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'agGrid';
+  ngDoCheck(){
+    console.log("docheck from app component")
+  }
 }

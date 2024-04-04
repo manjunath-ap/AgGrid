@@ -1,0 +1,13 @@
+<p>demo works!</p>
+<button (click)="clear()">clear</button>
+<ag-grid-angular 
+class="ag-theme-alpine"
+ style="height: 500px;width:1000px;"
+ 
+[rowData]="rowData |async"
+[columnDefs]="colDefs"
+[defaultColDef]="sort_filter"
+[rowSelection]="'multiple'"
+[animateRows]="true"
+(cellClicked)="celclicked($event)"
+></ag-grid-angular>
